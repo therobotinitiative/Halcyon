@@ -28,7 +28,7 @@ public final class HalcyonCollectionUtils
 	 *            Type <T> value which is pushed into the {@link Collection};
 	 *            can be null
 	 */
-	public static <T> void pushToList(List<T> list, T value)
+	public static <T> void pushToList(List<T> list, final T value)
 	{
 		if (list != null && value != null)
 		{
@@ -68,7 +68,7 @@ public final class HalcyonCollectionUtils
 	 * @return First value from {@link Collection}; null if the
 	 *         {@link Collection} is null or empty
 	 */
-	public static <T> T peekCollection(Collection<T> collection)
+	public static <T> T peekCollection(final Collection<T> collection)
 	{
 		if (collection != null && !collection.isEmpty())
 		{
@@ -91,7 +91,7 @@ public final class HalcyonCollectionUtils
 	 * @param value
 	 *            Value of type <T>; can be null
 	 */
-	public static <T> void addToCollection(Collection<T> collection, T value)
+	public static <T> void addToCollection(Collection<T> collection, final T value)
 	{
 		if (collection != null && value != null)
 		{

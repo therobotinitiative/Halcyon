@@ -29,7 +29,7 @@ public final class HalcyonNetUtils
 	 * @return New {@link URL} instance; null if the parameter is not a valid
 	 *         {@link URL}
 	 */
-	public static URL parseURL(String value)
+	public static URL parseURL(final String value)
 	{
 		try
 		{
@@ -51,7 +51,7 @@ public final class HalcyonNetUtils
 	 * @return New {@link URI} instance; null if the parameter is not a valid
 	 *         {@link URI}
 	 */
-	public static URI parseURI(String value)
+	public static URI parseURI(final String value)
 	{
 		try
 		{
@@ -72,7 +72,7 @@ public final class HalcyonNetUtils
 	 *            {@link URL}
 	 * @return {@link URL#toString()}; null if the parameter is null
 	 */
-	public static String toString(URL url)
+	public static String toString(final URL url)
 	{
 		if (url != null)
 		{
@@ -89,7 +89,7 @@ public final class HalcyonNetUtils
 	 *            {@link URI}
 	 * @return {@link URI#toString()}; null if the parameter is null
 	 */
-	public static String toString(URI uri)
+	public static String toString(final URI uri)
 	{
 		if (uri != null)
 		{

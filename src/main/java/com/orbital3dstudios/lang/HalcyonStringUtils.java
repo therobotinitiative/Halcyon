@@ -30,7 +30,7 @@ public final class HalcyonStringUtils
 	 * @return {@link Object#toString()} value; null if the parameter is null or
 	 *         the string value is empty
 	 */
-	public static <T extends Object> String toString(T value)
+	public static <T extends Object> String toString(final T value)
 	{
 		if (value != null && !StringUtils.isEmpty(value.toString()))
 		{
@@ -50,7 +50,7 @@ public final class HalcyonStringUtils
 	 * @return {@link Locale#getCountry()} value; null if the parameter is null
 	 *         or the country code is empty
 	 */
-	public static String toCountryCode(Locale locale)
+	public static String toCountryCode(final Locale locale)
 	{
 		if (locale != null && !StringUtils.isEmpty(locale.getCountry()))
 		{
@@ -70,7 +70,7 @@ public final class HalcyonStringUtils
 	 * @return {@link Locale#getLanguage()} value; null if the parameter is null
 	 *         or the country code is empty
 	 */
-	public static String toLanguage(Locale locale)
+	public static String toLanguage(final Locale locale)
 	{
 		if (locale != null && !StringUtils.isEmpty(locale.getLanguage()))
 		{

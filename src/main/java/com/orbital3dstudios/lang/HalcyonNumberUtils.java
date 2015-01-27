@@ -30,7 +30,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Byte} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Byte toByte(T value)
+	public static <T extends Object> Byte toByte(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -48,7 +48,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Short} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Short toShort(T value)
+	public static <T extends Object> Short toShort(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -66,7 +66,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Integer} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Integer toInteger(T value)
+	public static <T extends Object> Integer toInteger(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -84,7 +84,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Long} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Long toLong(T value)
+	public static <T extends Object> Long toLong(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -102,7 +102,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Float} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Float toFloat(T value)
+	public static <T extends Object> Float toFloat(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -120,7 +120,7 @@ public final class HalcyonNumberUtils
 	 *            {@link Object#toString()} return value to parse; can be null
 	 * @return {@link Double} instance; null if no value could be parsed
 	 */
-	public static <T extends Object> Double toDouble(T value)
+	public static <T extends Object> Double toDouble(final T value)
 	{
 		if (value != null && NumberUtils.isNumber(value.toString()))
 		{
@@ -135,7 +135,7 @@ public final class HalcyonNumberUtils
 	 * @return {@link Number#toString()} return value; null if the parameter is
 	 *         null
 	 */
-	public static <T extends Number> String toString(T value)
+	public static <T extends Number> String toString(final T value)
 	{
 		if (value != null)
 		{
